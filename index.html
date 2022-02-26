@@ -8,5 +8,67 @@
 </head>
 <body>
   <h1>Online zoo layout</h1>
+
+  <section class="testimonials">
+    <div class="container testimonials__container">
+      <div class="testimonilas__content">
+        <p class="testimonials__title">Testimonials</p>
+        <button class="testimonials__btn">Leave feedback</button>
+      </div>
+      <ul class="testimonials__list">
+        <li class="testimonilas__item">
+          <div class="testimonials__item-action">
+            <time datetime="2020-12-20">20 Decepmer 2020</time>
+            <p class="testimonials__descreption">Awesome place to observe my favourite aligators at Florida, the quality of the video is great. </p>
+          </div>
+          <div class="testimonials__item-content">
+            <img src="img/adam.png" srcset="img/adam@2x.png 2x, img/adam.png 1x" alt="adam" width="68" height="68">
+            <p class="testimonials__item-title">Adam, Spain</p>
+          </div>
+        </li>
+        <li class="testimonilas__item">
+          <div class="testimonials__item-action">
+            <time datetime="2020-12-20">20 Decepmer 2020</time>
+            <p class="testimonials__descreption">Awesome place to observe my favourite aligators at Florida, the quality of the video is great. </p>
+          </div>
+          <div class="testimonials__item-content">
+            <img src="img/chris.png" srcset="img/chris@2x.png 2x, img/chris.png 1x" alt="chris" width="68" height="68">
+            <p class="testimonials__item-title">Chris, Australia</p>
+          </div>
+        </li>
+        <li class="testimonilas__item">
+          <div class="testimonials__item-action">
+            <time datetime="2020-12-20">20 Decepmer 2020</time>
+            <p class="testimonials__descreption">Awesome place to observe my favourite aligators at Florida, the quality of the video is great. </p>
+          </div>
+          <div class="testimonials__item-content">
+            <img src="img/amely.png" srcset="img/amely@2x.png 2x, img/amely.png 1x" alt="amely" width="68" height="68">
+            <p class="testimonials__item-title">Amely, USA</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="feedback-modal">
+    <div class="feedback-modal__content">
+      <p class="feedback-modal__title">Leave feedback</p>
+      <form class="feedback-modal__form" method="get">
+        <label>
+          Name
+          <input  class="feedback-modal__input" name="name" type="text" required>
+        </label>
+        <label>
+          Email
+          <input  class="feedback-modal__input" name="email" type="email" required>
+        </label>
+        <label>
+          Feedback
+          <textarea name="feedback"cols="30" rows="10"></textarea>
+        </label>
+        <button type="submit">send</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
