@@ -29,5 +29,46 @@
      </div>
    </section>
   </main>
+  <div class="donate-modal">
+    <div class="donate-modal__container">
+      <h2 class="donate-modal__title">Donate to volunteers</h2>
+      <p class="donate-modal__text">Support your favourite animals. It is as simple as buying a cup of coffee.</p>
+      <form class="form" method="post">
+        <label class="form__label">
+          Choose an animal
+          <input class="form__input" type="text" name="text" required>
+        </label>
+        <button class="form__btn" type="submit">Monthly</button>
+        <button class="form__btn" type="submit">One-time</button>
+       <div class="form__wrapper-checkbox">
+        <input class="form__input-checkbox" type="checkbox" name="number" required>
+        <input class="form__input-checkbox" type="checkbox" name="number" required>
+        <input class="form__input-checkbox" type="checkbox" name="number" required>
+        <input class="form__input-checkbox" type="checkbox" name="number" required>
+       </div>
+       Your name
+       <input class="form__input" type="text" name="name" required>
+       Your email
+       <input type="email" name="email" required>
+       <ul class="form__list">
+         <li class="form__item">
+           <img class="form__item-img" src="img/american-express.svg" alt="american-express icon" width="13" height="13">
+          </li>
+         <li class="form__item">
+           <img class="form__item-img" src="img/visa-icon.svg" alt="visa icon" width="33" height="11">
+          </li>
+         <li class="form__item">
+           <img class="form__item-img" src="img/master-card.svg" alt="master card icon" width="22" height="15">
+          </li>
+         <li class="form__item">
+           <img class="form__item-img" src="img/maestro-card.svg" alt="maestro card icon" width="18" height="14">
+          </li>
+       </ul>
+       <input class="form__input" type="date" name="date" required placeholder="Card Number">
+       <button class="form__send-btn" type="submit">Send</button>
+       <p class="form__description">Your payment is protected</p>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
