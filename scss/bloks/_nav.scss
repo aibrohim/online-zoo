@@ -1,0 +1,27 @@
+.nav {
+}
+.nav__list {
+    display: flex;
+    @include list-steyle;
+
+}
+.nav__item {
+    margin-right: 52px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.nav__link {
+    @include roboto-mono;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #C5E1E6; 
+}
+@media only screen and (max-width: $destop) {
+   .nav__item {
+       margin-right: 42px;
+   }  
+    
+}

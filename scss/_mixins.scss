@@ -1,0 +1,14 @@
+@mixin list-steyle {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@mixin rubik {
+    font-family: "Rubik", Arial, Helvetica, sans-serif;  
+} 
+@mixin roboto {
+    font-family: "Ronoto", Arial, Helvetica, sans-serif;
+}
+@mixin roboto-mono {
+    font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+}
