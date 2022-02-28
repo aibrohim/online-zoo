@@ -303,18 +303,18 @@
       <p class="feedback-modal__title">Leave feedback</p>
       <form class="feedback-modal__form" method="get">
         <label>
-          Name
+          <span class="feedback-modal__text">Name</span>
           <input class="feedback-modal__input" name="name" type="text" required>
         </label>
         <label>
-          Email
+          <span class="feedback-modal__text">Email</span>
           <input class="feedback-modal__input" name="email" type="email" required>
         </label>
         <label>
-          Feedback
-          <textarea name="feedback" cols="30" rows="10"></textarea>
+          <span class="feedback-modal__text">Feedback</span>          
+          <textarea class="feedback-modal__input" name="feedback" required cols="30" rows="10"></textarea>
         </label>
-        <button type="submit">send</button>
+        <button class="feedback-modal__btn" type="submit">send</button>
       </form>
     </div>
   </div>
@@ -339,6 +339,7 @@
         </form>
     </div>
 </div>
+<script src="js/feedback.js"></script>
 </body>
 
 </html>
