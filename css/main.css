@@ -655,7 +655,7 @@ a {
   position: relative;
 }
 
-.pets__item-content.pets__item-content a {
+.pets__item-content a {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -725,10 +725,39 @@ a {
     width: 351.53px;
   }
   .pets__item-link {
-    margin: 26.82px 96px 42px 93px;
+    margin: 26.82px 96px 23px 93px !important;
+    width: 162.72px;
+    height: 157px;
+  }
+  .pets__item-img {
+    display: inline-block;
+    width: 162.72px;
+    height: 157px;
+  }
+  .pets__item-title {
+    font-family: "Ronoto", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #0D444D;
+  }
+  .pets__item-description {
+    width: 210px;
+    font-family: "Ronoto", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15.71px;
+    color: #909090;
+  }
+  .pets__item-content a {
+    right: 25px;
   }
   .pets__next-elements {
-    right: 31px;
+    top: 400px;
+    right: 0px;
+  }
+  .pets__next-leftArrow {
+    margin-bottom: 184px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -182,7 +182,8 @@
         <div class="pets__head">
           <h2 class="pets__head-title">Pets in zoo</h2>
           <button class="pets__head-button">
-            <svg class="pets__button-heart" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="pets__button-heart" width="20" height="18" viewBox="0 0 20 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17.513 9.58341L10.013 17.0114L2.513 9.58341C2.0183 9.10202 1.62864 8.52342 1.36854 7.88404C1.10845 7.24466 0.983558 6.55836 1.00173 5.86834C1.01991 5.17832 1.18076 4.49954 1.47415 3.87474C1.76755 3.24994 2.18713 2.69266 2.70648 2.23799C3.22583 1.78331 3.8337 1.4411 4.49181 1.23289C5.14991 1.02468 5.844 0.954991 6.53036 1.02821C7.21673 1.10143 7.8805 1.31596 8.47987 1.65831C9.07925 2.00066 9.60124 2.46341 10.013 3.01741C10.4265 2.46743 10.9491 2.00873 11.5481 1.67001C12.1471 1.3313 12.8095 1.11986 13.4939 1.04893C14.1784 0.977998 14.8701 1.04911 15.5258 1.2578C16.1815 1.46649 16.787 1.80828 17.3045 2.26177C17.8221 2.71526 18.2404 3.27069 18.5334 3.8933C18.8264 4.51591 18.9877 5.19229 19.0073 5.88012C19.0269 6.56794 18.9043 7.2524 18.6471 7.89066C18.39 8.52892 18.0039 9.10723 17.513 9.58941"
                 stroke="#19707D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -196,9 +197,15 @@
           <li class="pets__item pets__item--pandas">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
+
+                <source media="(max-width: 1200px)" type="image/webp"
+                  srcset="img/panda-desktop.webp 1x, img/panda-desktop@2x.webp 2x">
+
+                  <source type="image/img" media="(max-width: 1200px)"
+                    srcset="img/panda-desktop2x.png 2x, img/panda-desktop.png 1x">
+
                 <source type="image/webp" srcset="img/panda.webp 1x, img/panda@2x.webp 2x">
-                <img src="img/panda.png" alt="Pandas" srcset="img/panda@2x.png 2x, img/panda.png"
-                  width="228.92" height="221">
+                <img src="img/panda.png" alt="Pandas" srcset="img/panda@2x.png 2x, img/panda.png">
               </picture>
             </a>
             <div class="pets__item-content">
@@ -212,9 +219,9 @@
           <li class="pets__item pets__item--eagles">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
+
                 <source type="image/webp" srcset="img/eagle.webp 1x, img/eagle@2x.webp 2x">
-                <img src="img/eagle.png" alt="eagles" srcset="img/eagle@2x.png 2x, img/eagle.png"
-                  width="228.92" height="221">
+                <img src="img/eagle.png" alt="eagles" srcset="img/eagle@2x.png 2x, img/eagle.png">
               </picture>
             </a>
             <div class="pets__item-content">
@@ -226,9 +233,9 @@
           <li class="pets__item pets__item--gorillas">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
+
                 <source type="image/webp" srcset="img/gorilla.webp 1x, img/gorilla@2x.webp 2x">
-                <img src="img/gorilla.png" alt="gorillas" srcset="img/gorilla@2x.png 2x, img/gorilla.png"
-                  width="228.92" height="221">
+                <img src="img/gorilla.png" alt="gorillas" srcset="img/gorilla@2x.png 2x, img/gorilla.png">
               </picture>
             </a>
             <div class="pets__item-content">
@@ -240,9 +247,10 @@
           <li class="pets__item pets__item--aligators">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
+
                 <source type="image/webp" srcset="img/aligator.webp 1x, img/aligator@2x.webp 2x">
                 <img src="img/aligator.png" alt="aligators" srcset="img/aligator@2x.png 2x, img/aligator.png"
-                  width="228.92" height="221">
+                  >
               </picture>
             </a>
             <div class="pets__item-content">
@@ -254,9 +262,10 @@
           <li class="pets__item pets__item--elephants">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
+
                 <source type="image/webp" srcset="img/elephant.webp 1x, img/elephant@2x.webp 2x">
                 <img src="img/elephant.png" alt="elephants" srcset="img/elephant@2x.png 2x, img/elephant.png"
-                  width="228.92" height="221">
+                  >
               </picture>
             </a>
             <div class="pets__item-content">
@@ -268,9 +277,9 @@
           <li class="pets__item pets__item--lemurs">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
+
                 <source type="image/webp" srcset="img/lemur.webp 1x, img/lemur@2x.webp 2x">
-                <img src="img/lemur.png" alt="lemurs" srcset="img/lemur@2x.png 2x, img/lemur.png"
-                  width="228.92" height="221">
+                <img src="img/lemur.png" alt="lemurs" srcset="img/lemur@2x.png 2x, img/lemur.png">
               </picture>
             </a>
             <div class="pets__item-content">
@@ -280,7 +289,7 @@
             </div>
           </li>
         </ul>
-        
+
         <div class="pets__next-elements">
           <svg class="pets__next-rightArrow" width="17" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="m6.5 1.5 9.353 10.1a1 1 0 0 1-.02 1.38L6.5 22.5" stroke="#19707D" stroke-width="1.5"
@@ -288,18 +297,18 @@
             <path d="m1.5 1.5 9.353 10.1a1 1 0 0 1-.02 1.38L1.5 22.5" stroke="#19707D" stroke-width="1.5"
               stroke-linecap="round" />
           </svg>
-        
+
           <svg class="pets__next-leftArrow" width="17" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.5 1.5 1.147 11.6a1 1 0 0 0 .02 1.38L10.5 22.5" stroke="#19707D" stroke-width="1.5"
               stroke-linecap="round" />
             <path d="M15.5 1.5 6.147 11.6a1 1 0 0 0 .02 1.38L15.5 22.5" stroke="#19707D" stroke-width="1.5"
               stroke-linecap="round" />
           </svg>
-        
+
           <img src="img/penguin.svg" alt="penguin">
         </div>
-      <div>
-  
+        <div>
+
     </section>
 
     <section class="feeding">

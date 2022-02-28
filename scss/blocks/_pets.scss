@@ -85,17 +85,17 @@
     width: 100%;
     padding-top: 17px;
     position: relative;
-    
-    &.pets__item-content a {
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        background-image: url(../img/tv.svg);
-        content: '';
-        position: absolute;
-        top: 30%;
-        right: 30px;
-    }
+}
+
+.pets__item-content a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/tv.svg);
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: 30px;
 }
 
 .pets__item-title {
@@ -151,10 +151,38 @@
     }
 
     .pets__item-link {
-        margin:26.82px 96px 42px 93px;
+        margin: 26.82px 96px 23px 93px !important;
+
+        width: 162.72px;
+        height: 157px;
+    }
+
+    .pets__item-img {
+        display: inline-block;
+        width: 162.72px;
+        height: 157px;
+    }
+
+    .pets__item-title {
+        @include roboto-pets(500, 17px, 24px, $blue-accent);
+    }
+
+    .pets__item-description {
+        width: 210px;
+        @include roboto-pets(normal, 13px, 15.71px,
+            #909090);
+    }
+
+    .pets__item-content a {
+        right: 25px;
     }
 
     .pets__next-elements {
-        right: 31px;
+        top: 400px;
+        right: 0px;
+    }
+
+    .pets__next-leftArrow {
+        margin-bottom: 184px;
     }
 }
