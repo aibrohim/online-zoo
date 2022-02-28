@@ -1,0 +1,23 @@
+*,
+*::after {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+*::before {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.visually-hidden {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+body{
+    font-family: Rubik, Roboto Mono, sans-serif;
+}
