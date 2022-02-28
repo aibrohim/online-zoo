@@ -637,6 +637,7 @@ a {
 
 .pets__item:nth-child(1n), .pets__item:nth-child(2n) {
   margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .pets__item-link {
@@ -697,5 +698,37 @@ a {
 
 .pets__next-leftArrow {
   margin-bottom: 258.65px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pets__container {
+    max-width: 1182px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pets__head {
+    width: 100%;
+  }
+  .pets__head-title {
+    font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #0D444D;
+    letter-spacing: 0.1em;
+  }
+  .pets__list {
+    width: 1076px;
+  }
+  .pets__item {
+    width: 351.53px;
+  }
+  .pets__item-link {
+    margin: 26.82px 96px 42px 93px;
+  }
+  .pets__next-elements {
+    right: 31px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
