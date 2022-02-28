@@ -1,0 +1,125 @@
+.pets {
+    margin-top: 113px;
+}
+
+.pets__container {
+    position: relative;
+}
+
+.pets__head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pets__head-title {
+    @include rubik-pets(400, 24px, 28.44px, $blue-accent);
+    text-transform: uppercase;
+}
+
+.pets__head-button {
+    width: 341px;
+    border: 1.5px solid #19707D;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.pets__button-heart {
+    margin-left: 23px;
+    margin-right: 18px;
+}
+
+.pets__head-button p {
+    @include roboto-monoPets(400, 18px, 23px, #19707D);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 14px 0;
+    padding-right: 20px;
+}
+
+.pets__list {
+    margin-top: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.pets__item {
+    width: 480px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    text-decoration: none;
+
+    &:nth-child(3n),
+    &:last-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    &:nth-child(1n),
+    &:nth-child(2n) {
+        margin-bottom: 20px;
+    }
+}
+
+.pets__item-link {
+    display: inline-block;
+    text-decoration: none;
+    width: 228px;
+    height: 221px;
+    margin: 20px 126px 32px;
+}
+
+.pets__item-content {
+    border-top: 1px solid #E5EAEB;
+    width: 100%;
+    padding-top: 17px;
+    position: relative;
+    
+    &::after {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background-image: url(../../img/tv.svg);
+        content: '';
+        position: absolute;
+        top: 30%;
+        right: 30px;
+    }
+}
+
+.pets__item-title {
+    padding-left: 30px;
+    @include roboto-pets(500, 24px, 28px, #2D2D2D);
+    margin-bottom: 6px;
+
+}
+
+.pets__item-description {
+    @include roboto-pets(normal, 16px, 19px, #919191);
+    padding: 0 30px 21px;
+}
+
+.pets__next-elements {
+    position: absolute;
+    right: -65px;
+    top: 467px;
+}
+
+.pets__next-rightArrow {
+    display: block;
+    margin-bottom: 31px;
+}
+
+.pets__next-leftArrow {
+    margin-bottom: 258.65px;
+}

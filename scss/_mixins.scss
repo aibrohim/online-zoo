@@ -12,3 +12,25 @@
 @mixin roboto-mono {
     font-family: "Roboto Mono", 'Courier New', Courier, monospace;
 }
+
+@mixin rubik-pets ($fw, $fz, $lh, $color) {
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+} 
+@mixin roboto-pets ($fw, $fz, $lh, $color) {
+    font-family: "Ronoto", Arial, Helvetica, sans-serif;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+}
+@mixin roboto-monoPets ($fw, $fz, $lh, $color) {
+    font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+}
