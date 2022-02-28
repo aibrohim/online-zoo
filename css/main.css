@@ -411,6 +411,10 @@ body {
   margin-top: 113px;
 }
 
+.freez {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   display: block;
