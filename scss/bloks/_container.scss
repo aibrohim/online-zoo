@@ -3,3 +3,23 @@
   padding: 0 20px;
   margin: 0 auto;
 }
+.container-small {
+  max-width: 1520px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (max-width: $desktop-small) {
+  .container-small {
+    max-width: 1180px;
+  }
+}
+@media screen and (max-width: $tablet-small) {
+  .container-small {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: $mobile-small) {
+  .container-small {
+    max-width: 340px;
+  }
+}
