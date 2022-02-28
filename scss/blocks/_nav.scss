@@ -1,6 +1,7 @@
 .nav {
     display: flex;
     flex-grow: 1;
+    padding: 80px 0;
 }
 
 .nav__list {
@@ -62,4 +63,9 @@
 
 .nav__button-link--close {
     display: block;
+}
+@media only screen and(max-width:1024px){
+.nav__list{
+    display: none;
+}
 }

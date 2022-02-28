@@ -17,3 +17,13 @@
     padding: 46px 60px;
     border-radius: 15px;
 }
+@media only screen and(max-width:640px){
+ .modal__content{
+     width: 454px;
+ }   
+}
+@media only screen and(max-width:320px){
+    .modal__content{
+        width: 320px;
+    }
+}

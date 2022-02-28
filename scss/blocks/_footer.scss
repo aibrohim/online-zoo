@@ -1,6 +1,44 @@
-.footer{
+.footer {
     background-color: $greencolor;
 }
-.footer__container{
-    display: block;
+
+.footer__container {
+    display: flex;
+    align-items: center;
+}
+.footer__logo-mobile{
+    display: none;
+}
+
+.footer__content {
+    width: 300px;
+    font-family: Roboto mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+@media only screen and(max-width:1024px) {
+    .footer__content {
+        margin-left: auto;
+    }
+}
+
+@media only screen and(max-width:500px) {
+    .footer__content {
+        width: 189px;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .footer__logo{
+        display: none;
+    }
+    .footer__logo-mobile{
+        display: block;
+    }
 }
