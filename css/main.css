@@ -440,6 +440,12 @@ a {
   margin: 0 auto;
 }
 
+.container-small {
+  max-width: 1520px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .header {
   background-color: #2a8086;
   padding: 13px 0;
