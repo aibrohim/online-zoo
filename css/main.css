@@ -441,6 +441,7 @@ a {
 }
 
 .header {
+  display: block;
   background-color: #2a8086;
   padding: 13px 0;
   position: fixed;
@@ -534,5 +535,142 @@ a {
   .nav__item {
     margin-right: 42px;
   }
+}
+
+.sign {
+  margin: 0 auto;
+  background-color: white;
+  display: block;
+  border-radius: 20px;
+}
+
+.sign__form {
+  width: 568px;
+  padding: 0 60px 46px;
+  margin: 0 auto;
+}
+
+.sign__titls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sign__title {
+  padding: 32px 0 20px;
+  position: relative;
+}
+
+.sign__title::after {
+  width: 448px;
+  height: 2px;
+  background-color: #C5E1E6;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+}
+
+.sign__logo {
+  padding: 32px 0;
+  display: block;
+  text-align: center;
+  width: 568px;
+  margin: 0 auto;
+  background-color: #2a8086;
+}
+
+.sign__title {
+  font-family: "Ronoto", Arial, Helvetica, sans-serif;
+  margin-right: 40px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #0D444D;
+}
+
+.sign__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.sign__link {
+  font-family: "Ronoto", Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2D2D2D;
+}
+
+.sign__img {
+  margin-right: 15px;
+}
+
+.sign__label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.sign__label:last-child {
+  margin-bottom: 0;
+}
+
+.sign__field {
+  width: 448px;
+  height: 54px;
+  border: none;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.sign__text {
+  display: block;
+  font-family: "Ronoto", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #0D444D;
+  margin-bottom: 8px;
+}
+
+.sign__chekbox {
+  margin-top: 28px;
+  margin-bottom: 32px;
+  display: block;
+}
+
+.sign__btn {
+  display: block;
+  border: none;
+  width: 448px;
+  padding: 15px 0;
+  font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C5E1E6;
+  background-color: #2A8088;
+  -webkit-box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+          box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+  border-radius: 100px;
 }
 /*# sourceMappingURL=main.css.map */
