@@ -654,11 +654,11 @@ a {
   position: relative;
 }
 
-.pets__item-content::after {
+.pets__item-content.pets__item-content a {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-image: url(../../img/tv.svg);
+  background-image: url(../img/tv.svg);
   content: '';
   position: absolute;
   top: 30%;
