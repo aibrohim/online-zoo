@@ -557,15 +557,14 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.sign__title {
-  padding: 32px 0 20px;
+  width: 100%;
   position: relative;
+  padding: 32px 0 20px;
+  text-align: center;
 }
 
-.sign__title::after {
-  width: 448px;
+.sign__titls::after {
+  width: 100%;
   height: 2px;
   background-color: #C5E1E6;
   position: absolute;
@@ -574,23 +573,61 @@ a {
   left: 0;
 }
 
-.sign__logo {
-  padding: 32px 0;
-  display: block;
-  text-align: center;
-  width: 568px;
-  margin: 0 auto;
-  background-color: #2a8086;
-}
-
 .sign__title {
   font-family: "Ronoto", Arial, Helvetica, sans-serif;
-  margin-right: 40px;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
   color: #0D444D;
+  width: 50%;
+}
+
+.sign__title--account {
+  position: relative;
+}
+
+.sign__title--account::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #040e0f;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  z-index: 2;
+}
+
+.sign__title--login {
+  position: relative;
+}
+
+.sign__title--login::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #040e0f;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  z-index: 2;
+}
+
+.sign__logo {
+  padding: 32px 0;
+  display: block;
+  text-align: center;
+  width: 568px;
+  height: 140px;
+  margin: 0 auto;
+  background-color: #2a8086;
+  position: relative;
+}
+
+.sign__logo-img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 54px);
 }
 
 .sign__links {
@@ -652,9 +689,9 @@ a {
 }
 
 .sign__chekbox {
-  margin-top: 28px;
-  margin-bottom: 32px;
   display: block;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .sign__btn {
