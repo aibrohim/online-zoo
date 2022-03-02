@@ -538,10 +538,11 @@ a {
 }
 
 .sign {
-  margin: 0 auto;
+  margin: auto auto;
   background-color: white;
   display: block;
   border-radius: 20px;
+  width: 568px;
 }
 
 .sign__form {
@@ -591,7 +592,7 @@ a {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #040e0f;
+  background-color: #2a8086;
   position: absolute;
   top: 39px;
   left: 0;
@@ -606,7 +607,7 @@ a {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #040e0f;
+  background-color: #2a8086;
   position: absolute;
   top: 39px;
   left: 0;
@@ -614,20 +615,17 @@ a {
 }
 
 .sign__logo {
-  padding: 32px 0;
+  padding: 32px 20px;
   display: block;
   text-align: center;
-  width: 568px;
-  height: 140px;
-  margin: 0 auto;
   background-color: #2a8086;
   position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .sign__logo-img {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 54px);
+  margin: 0 auto;
 }
 
 .sign__links {
@@ -709,5 +707,37 @@ a {
   -webkit-box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
           box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
   border-radius: 100px;
+}
+
+.modal__sign {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  padding-top: 40px;
+  display: none;
+}
+
+.modal__sign--opened {
+  display: block;
+}
+
+.modal__login {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  padding-top: 40px;
+  display: none;
+}
+
+.modal__login--opened {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

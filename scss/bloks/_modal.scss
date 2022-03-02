@@ -1,0 +1,32 @@
+.modal {
+   
+}
+
+.modal__sign {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 99;
+    padding-top: 40px;
+    display: none;
+}
+.modal__sign--opened {
+    display: block;
+}
+.modal__login {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 99;
+    padding-top: 40px;
+    display: none;
+}
+.modal__login--opened {
+    display: block;
+}
