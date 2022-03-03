@@ -90,7 +90,7 @@
         </button>
 
         <ul class="pets__list">
-          <li class="pets__item pets__item--">
+          <li class="pets__item">
             <picture>
               <source type="image/webp"
                 srcset="img/panda.webp 1x, img/panda@2x.webp 2x">
@@ -113,7 +113,7 @@
               <a href="#" class="pets__item-button"><img src="img/tv.svg" alt="" class="pets__item-buttonImg"></a>
             </div>
           </li>
-          <li class="pets__item pets__item--">
+          <li class="pets__item">
             <picture>
               <source type="image/webp" srcset="img/eagle.webp 1x, img/eagle@2x.webp 2x">
             
@@ -133,7 +133,7 @@
               <a href="#" class="pets__item-button"><img src="img/tv.svg" alt="" class="pets__item-buttonImg"></a>
             </div>
           </li>
-          <li class="pets__item pets__item--">
+          <li class="pets__item">
             <img src="img/panda.png" alt="panda" class="pets__item-img">
             <div class="pets__item-content">
               <div class="pets__item-info">
@@ -143,7 +143,7 @@
               <a href="#" class="pets__item-button"><img src="img/tv.svg" alt="" class="pets__item-buttonImg"></a>
             </div>
           </li>
-          <li class="pets__item pets__item--">
+          <li class="pets__item">
             <img src="img/panda.png" alt="panda" class="pets__item-img">
             <div class="pets__item-content">
               <div class="pets__item-info">
@@ -153,7 +153,7 @@
               <a href="#" class="pets__item-button"><img src="img/tv.svg" alt="" class="pets__item-buttonImg"></a>
             </div>
           </li>
-          <li class="pets__item pets__item--">
+          <li class="pets__item">
             <img src="img/panda.png" alt="panda" class="pets__item-img">
             <div class="pets__item-content">
               <div class="pets__item-info">
@@ -163,7 +163,7 @@
               <a href="#" class="pets__item-button"><img src="img/tv.svg" alt="" class="pets__item-buttonImg"></a>
             </div>
           </li>
-          <li class="pets__item pets__item--">
+          <li class="pets__item">
             <img src="img/panda.png" alt="panda" class="pets__item-img">
             <div class="pets__item-content">
               <div class="pets__item-info">
@@ -194,15 +194,15 @@
         </div>
 
         <ul class="pets__list">
-          <li class="pets__item pets__item--pandas">
+          <li class="pets__itempandas">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
 
                 <source media="(max-width: 1200px)" type="image/webp"
                   srcset="img/panda-desktop.webp 1x, img/panda-desktop@2x.webp 2x">
 
-                  <source type="image/img" media="(max-width: 1200px)"
-                    srcset="img/panda-desktop2x.png 2x, img/panda-desktop.png 1x">
+                <source type="image/img" media="(max-width: 1200px)"
+                  srcset="img/panda-desktop2x.png 2x, img/panda-desktop.png 1x">
 
                 <source type="image/webp" srcset="img/panda.webp 1x, img/panda@2x.webp 2x">
                 <img src="img/panda.png" alt="Pandas" srcset="img/panda@2x.png 2x, img/panda.png">
@@ -216,7 +216,7 @@
               </a>
             </div>
           </li>
-          <li class="pets__item pets__item--eagles">
+          <li class="pets__itemeagles">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
 
@@ -230,7 +230,7 @@
               <a href="#"><img src="img/tv.svg" alt="tv"></a>
             </div>
           </li>
-          <li class="pets__item pets__item--gorillas">
+          <li class="pets__itemgorillas">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
 
@@ -244,13 +244,12 @@
               <a href="#"><img src="img/tv.svg" alt="tv"></a>
             </div>
           </li>
-          <li class="pets__item pets__item--aligators">
+          <li class="pets__itemaligators">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
 
                 <source type="image/webp" srcset="img/aligator.webp 1x, img/aligator@2x.webp 2x">
-                <img src="img/aligator.png" alt="aligators" srcset="img/aligator@2x.png 2x, img/aligator.png"
-                  >
+                <img src="img/aligator.png" alt="aligators" srcset="img/aligator@2x.png 2x, img/aligator.png">
               </picture>
             </a>
             <div class="pets__item-content">
@@ -259,13 +258,12 @@
               <a href="#"><img src="img/tv.svg" alt="tv"></a>
             </div>
           </li>
-          <li class="pets__item pets__item--elephants">
+          <li class="pets__itemelephants">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
 
                 <source type="image/webp" srcset="img/elephant.webp 1x, img/elephant@2x.webp 2x">
-                <img src="img/elephant.png" alt="elephants" srcset="img/elephant@2x.png 2x, img/elephant.png"
-                  >
+                <img src="img/elephant.png" alt="elephants" srcset="img/elephant@2x.png 2x, img/elephant.png">
               </picture>
             </a>
             <div class="pets__item-content">
@@ -274,7 +272,7 @@
               <a href="#"><img src="img/tv.svg" alt="tv"></a>
             </div>
           </li>
-          <li class="pets__item pets__item--lemurs">
+          <li class="pets__itemlemurs">
             <a class="pets__item-link" href="#">
               <picture class="pets__item-img">
 
@@ -307,7 +305,8 @@
 
           <img src="img/penguin.svg" alt="penguin">
         </div>
-        <div>
+        
+      </div>
 
     </section>
 
@@ -504,6 +503,60 @@
           <input type="text" class="contact-modal__input contact-modal__long-input" name="Message">
         </label>
         <button class="contact-modal__btn" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="auth-modal register">
+    <div class="auth-modal__content register__content">
+      <img src="img/Logo.svg" alt="logo">
+      <button class="auth-modal__btn register__create">Create account</button>
+      <button class="auth-modal__btn register__login">Log in</button>
+
+      <form class="auth-modal__form" action="#">
+        <label class="auth-modal__form-name">Name
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label class="auth-modal__form-email" for="">
+          Email
+          <input type="email" name="email" id="email" required>
+        </label>
+        <label class="auth-modal__form-pass" for="">
+          Password
+          <input class="" type="password" name="pass" id="pass" required>
+        </label>
+        <label class="auth-modal__form-checkbox" for="">
+          <input type="checkbox" name="check" id="check">
+          Agree with the User Agreement and Privacy Policy
+        </label>
+        <input type="submit" value="send">
+      </form>
+    </div>
+  </div>
+
+  <div class="auth-modal login">
+    <div class="auth-modal__content login__content">
+      <img src="img/Logo.svg" alt="logo">
+      <button class="auth-modal__btn login__create">Create account</button>
+      <button class="auth-modal__btn login__login">Log in</button>
+
+      <form class="auth-modal__form" action="#">
+        <label class="auth-modal__form-name">Name
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label class="auth-modal__form-email" for="">
+          Email
+          <input type="email" name="email" id="email" required>
+        </label>
+        <label class="auth-modal__form-pass" for="">
+          Password
+          <input class="" type="password" name="pass" id="pass" required>
+        </label>
+        <label class="auth-modal__form-checkbox" for="">
+          <input type="checkbox" name="check" id="check">
+          Agree with the User Agreement and Privacy Policy
+        </label>
+        <input type="submit" value="send">
       </form>
     </div>
   </div>
