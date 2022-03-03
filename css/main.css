@@ -448,6 +448,7 @@ a {
 }
 
 .header {
+  display: block;
   background-color: #2a8086;
   padding: 13px 0;
   position: fixed;
@@ -543,6 +544,7 @@ a {
   }
 }
 
+<<<<<<< HEAD
 .pets {
   margin-top: 113px;
 }
@@ -604,12 +606,107 @@ a {
 
 .pets__list {
   margin-top: 78px;
+=======
+.sign {
+  margin: auto auto;
+  background-color: white;
+  display: block;
+  border-radius: 20px;
+  width: 568px;
+}
+
+.sign__form {
+  width: 568px;
+  padding: 0 60px 46px;
+  margin: 0 auto;
+}
+
+.sign__titls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 32px 0 20px;
+  text-align: center;
+}
+
+.sign__titls::after {
+  width: 100%;
+  height: 2px;
+  background-color: #C5E1E6;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+}
+
+.sign__title {
+  font-family: "Ronoto", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #0D444D;
+  width: 50%;
+}
+
+.sign__title--account {
+  position: relative;
+}
+
+.sign__title--account::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #2a8086;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  z-index: 2;
+}
+
+.sign__title--login {
+  position: relative;
+}
+
+.sign__title--login::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #2a8086;
+  position: absolute;
+  top: 39px;
+  left: 0;
+  z-index: 2;
+}
+
+.sign__logo {
+  padding: 32px 20px;
+  display: block;
+  text-align: center;
+  background-color: #2a8086;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.sign__logo-img {
+  margin: 0 auto;
+}
+
+.sign__links {
+>>>>>>> origin/header
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -759,5 +856,111 @@ a {
   .pets__next-leftArrow {
     margin-bottom: 184px;
   }
+=======
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.sign__link {
+  font-family: "Ronoto", Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2D2D2D;
+}
+
+.sign__img {
+  margin-right: 15px;
+}
+
+.sign__label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.sign__label:last-child {
+  margin-bottom: 0;
+}
+
+.sign__field {
+  width: 448px;
+  height: 54px;
+  border: none;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.sign__text {
+  display: block;
+  font-family: "Ronoto", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #0D444D;
+  margin-bottom: 8px;
+}
+
+.sign__chekbox {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sign__btn {
+  display: block;
+  border: none;
+  width: 448px;
+  padding: 15px 0;
+  font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C5E1E6;
+  background-color: #2A8088;
+  -webkit-box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+          box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+  border-radius: 100px;
+}
+
+.modal__sign {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  padding-top: 40px;
+  display: none;
+}
+
+.modal__sign--opened {
+  display: block;
+}
+
+.modal__login {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  padding-top: 40px;
+  display: none;
+}
+
+.modal__login--opened {
+  display: block;
+>>>>>>> origin/header
 }
 /*# sourceMappingURL=main.css.map */
