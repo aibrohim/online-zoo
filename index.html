@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="body">
   <h1>Online zoo layout</h1>
   <header class="header">
     <div class="container header__container">
@@ -46,7 +46,7 @@
           <a class="header__list-link" href="#">Log in</a>
         </li>
         <li class="header__item">
-          <a class="header__list-link header__list-link--sign" href="#">Sign up</a>
+          <a class="header__list-link header__list-link--sign register-button" href="#">Sign up</a>
         </li>
       </ul>
     </div>
@@ -305,7 +305,7 @@
 
           <img src="img/penguin.svg" alt="penguin">
         </div>
-        
+
       </div>
 
     </section>
@@ -451,7 +451,7 @@
     </div>
   </footer>
 
-  <div class="modal container">
+  <!-- <div class="modal container">
     <div class="sign">
       <a href="/"><img src="img/Logo.svg" alt="logo"></a>
       <div class="sign__titls">
@@ -505,61 +505,102 @@
         <button class="contact-modal__btn" type="submit">Send</button>
       </form>
     </div>
-  </div>
+  </div> -->
 
-  <div class="auth-modal register">
-    <div class="auth-modal__content register__content">
-      <img src="img/Logo.svg" alt="logo">
-      <button class="auth-modal__btn register__create">Create account</button>
-      <button class="auth-modal__btn register__login">Log in</button>
+  <div class="modal auth-modal register-modal">
+    <div class="modal__content register__content">
+      
+      <img class="auth-modal__img" src="img/Logo.svg" alt="logo">
+      <button class="modal__closer"></button>
+      <div class="auth-modal__page">
+        <button class="auth-modal__btn auth-modal__btn--active">Create account</button>
+        <button class="auth-modal__btn auth-modal__btn--login">Log in</button>
+      </div>
 
-      <form class="auth-modal__form" action="#">
-        <label class="auth-modal__form-name">Name
+      <div class="auth-modal__sign">
+        <a href="#" class="auth-modal__sign-social auth-modal__sign-google"  class="auth-modal__btn-google">
+          <img src="img/google.svg" alt="google in">
+          <p>Google Sign in</p>
+        </a>
+
+        <a href="#" class="auth-modal__sign-social auth-modal__sign-facebook">
+          <img src="img/face.svg" alt="facebook sign in">
+          <p>Facebook sign in</p>
+        </a>
+
+      </div>
+
+      <form class="auth-modal__form register--active" action="#">
+        <label class="auth-modal__form-label">Name
           <input type="text" name="name" id="name" required>
         </label>
-        <label class="auth-modal__form-email" for="">
+        <label class="auth-modal__form-label">
           Email
           <input type="email" name="email" id="email" required>
         </label>
-        <label class="auth-modal__form-pass" for="">
+        <label class="auth-modal__form-label">
           Password
           <input class="" type="password" name="pass" id="pass" required>
         </label>
-        <label class="auth-modal__form-checkbox" for="">
-          <input type="checkbox" name="check" id="check">
+        <label class="auth-modal__form-checkbox">
+          <input type="checkbox" name="check" id="check" required>
           Agree with the User Agreement and Privacy Policy
         </label>
-        <input type="submit" value="send">
+        <input class="auth-modal__form-submit" type="submit" value="send">
+      </form>
+
+      <form class="auth-modal__form login-form" action="#">
+        <label class="auth-modal__form-label">
+          Email
+          <input type="email" name="email" id="email" required>
+        </label>
+        <label class="auth-modal__form-label">
+          Password
+          <input class="" type="password" name="pass" id="pass" required>
+        </label>
+        </label>
+        <input class="auth-modal__form-submit" type="submit" value="send">
       </form>
     </div>
   </div>
 
-  <div class="auth-modal login">
-    <div class="auth-modal__content login__content">
-      <img src="img/Logo.svg" alt="logo">
-      <button class="auth-modal__btn login__create">Create account</button>
-      <button class="auth-modal__btn login__login">Log in</button>
-
+  <div class="modal login auth-modal">
+    <div class="modal__content">
+      <img class="auth-modal__img" src="img/Logo.svg" alt="logo">
+      <div class="auth-modal__page">
+        <button class="auth-modal__btn auth-modal__btn--register">Create account</button>
+        <button class="auth-modal__btn auth-modal__btn--active">Log in</button>
+      </div>
+  
+      <div class="auth-modal__sign">
+        <a href="#" class="auth-modal__sign-social auth-modal__sign-google" class="auth-modal__btn-google">
+          <img src="img/google.svg" alt="google in">
+          <p>Google Sign in</p>
+        </a>
+  
+        <a href="#" class="auth-modal__sign-social auth-modal__sign-facebook">
+          <img src="img/face.svg" alt="facebook sign in">
+          <p>Facebook sign in</p>
+        </a>
+  
+      </div>
+  
       <form class="auth-modal__form" action="#">
-        <label class="auth-modal__form-name">Name
-          <input type="text" name="name" id="name" required>
-        </label>
-        <label class="auth-modal__form-email" for="">
+        <label class="auth-modal__form-label">
           Email
           <input type="email" name="email" id="email" required>
         </label>
-        <label class="auth-modal__form-pass" for="">
+        <label class="auth-modal__form-label">
           Password
           <input class="" type="password" name="pass" id="pass" required>
         </label>
-        <label class="auth-modal__form-checkbox" for="">
-          <input type="checkbox" name="check" id="check">
-          Agree with the User Agreement and Privacy Policy
         </label>
-        <input type="submit" value="send">
+        <input class="auth-modal__form-submit" type="submit" value="send">
       </form>
     </div>
   </div>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

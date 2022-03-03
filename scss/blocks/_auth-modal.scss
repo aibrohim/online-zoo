@@ -1,0 +1,233 @@
+@keyframes login-height {
+    0% {
+        height: 774px;
+    }
+
+    100% {
+        height: 635px;
+    }
+}
+
+@keyframes register-height {
+    0% {
+        height: 635px;
+    }
+
+    100% {
+        height: 790px;
+    }
+}
+
+.register__content {
+    animation: register-height 0.4s both;
+}
+
+.register-modal {
+    display: none;
+}
+
+.modal__content {
+    position: relative;
+}
+
+.register-modal--opened {
+    display: flex;
+}
+
+.auth-modal__img {
+    display: block;
+    padding: 32px 236px 32px 254px;
+    background-color: #2A8086;
+    position: relative !important;
+}
+
+.modal__closer {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &::before {
+        display: block;
+        width: 3px;
+        height: 25px;
+        border-radius: 8px;
+        color: red;
+        background-color: red;
+        content: '';
+        position: inherit;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        display: block;
+        width: 3px;
+        height: 25px;
+        border-radius: 8px;
+        color: red;
+        background-color: red;
+        content: '';
+        position: inherit;
+        // top: 200px;
+        // right: 30px;
+        transform: rotate(-45deg);
+    }
+}
+
+.auth-modal__page {
+    width: 448px;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.auth-modal__btn {
+    @include roboto-pets(normal, 18px, 21px, #0D444D);
+    text-transform: uppercase;
+    margin: 0;
+    width: 50%;
+    padding: 0 29px 20px 30px;
+    border: none;
+    border-bottom: 2px solid #C5E1E6;
+    background-color: transparent;
+
+    &--active {
+        border-bottom: 2px solid #2A8086;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.auth-modal__btn--login--active {
+    border-bottom: 2px solid #2A8086;
+}
+
+.auth-modal__sign {
+    width: 448px;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.auth-modal__sign-social {
+    display: flex;
+    align-items: center;
+    width: 216px;
+    padding: 17px 55px 18px 16.72px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+
+    & img {
+        margin-right: 15px;
+    }
+
+    & p {
+        @include roboto-pets(normal, 16, 19px, #2d2d2d);
+    }
+}
+
+.auth-modal__sign-facebook {
+    padding: 17px 39px 18px 16.72px;
+}
+
+.auth-modal__form {
+    width: 448px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-modal__form-label {
+    display: flex;
+    flex-direction: column;
+    @include roboto-pets(normal, 14px, 16px, #0D444D);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    & input {
+        margin-top: 8px;
+        border: none;
+        height: 54px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+        border-radius: 10px;
+    }
+}
+
+.auth-modal__form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 32px;
+
+    & input {
+        width: 22px;
+        height: 22px;
+        margin-right: 22px;
+        cursor: pointer;
+    }
+}
+
+.auth-modal__form-submit {
+    @include roboto-monoPets(normal, 18px, 24px, #C5E1E6);
+    letter-spacing: 0.1em;
+    background: #2A8088;
+    box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+    border-radius: 100px;
+    padding: 15px 200px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.login {
+    display: none;
+
+    .modal__content {
+        height: 635px;
+    }
+}
+
+.login-form {
+    display: none;
+}
+
+.login-form--opened {
+    display: flex;
+}
+
+.register--active--closed {
+    display: none;
+}
+
+.register__content--height {
+    animation: login-height 0.3s both;
+}
+
+// .auth-modal__form--opened {
+//     display: block;
+// }
+
+// .auth-modal__form--closed {
+//     display: none;
+// }
+
+// .login--opened {
+//     height: 635px;
+//     display: none;
+// }
+

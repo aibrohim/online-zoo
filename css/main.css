@@ -435,6 +435,10 @@ a {
   margin: -1px;
 }
 
+.freez {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1648px;
   padding: 0 20px;
@@ -759,5 +763,321 @@ a {
   .pets__next-leftArrow {
     margin-bottom: 184px;
   }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 9;
+}
+
+.modal__content {
+  width: 568px;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+  height: 774px;
+}
+
+@-webkit-keyframes login-height {
+  0% {
+    height: 774px;
+  }
+  100% {
+    height: 635px;
+  }
+}
+
+@keyframes login-height {
+  0% {
+    height: 774px;
+  }
+  100% {
+    height: 635px;
+  }
+}
+
+@-webkit-keyframes register-height {
+  0% {
+    height: 635px;
+  }
+  100% {
+    height: 790px;
+  }
+}
+
+@keyframes register-height {
+  0% {
+    height: 635px;
+  }
+  100% {
+    height: 790px;
+  }
+}
+
+.register__content {
+  -webkit-animation: register-height 0.4s both;
+          animation: register-height 0.4s both;
+}
+
+.register-modal {
+  display: none;
+}
+
+.modal__content {
+  position: relative;
+}
+
+.register-modal--opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.auth-modal__img {
+  display: block;
+  padding: 32px 236px 32px 254px;
+  background-color: #2A8086;
+  position: relative !important;
+}
+
+.modal__closer {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  border: none;
+}
+
+.modal__closer:hover {
+  cursor: pointer;
+}
+
+.modal__closer::before {
+  display: block;
+  width: 3px;
+  height: 25px;
+  border-radius: 8px;
+  color: red;
+  background-color: red;
+  content: '';
+  position: inherit;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal__closer::after {
+  display: block;
+  width: 3px;
+  height: 25px;
+  border-radius: 8px;
+  color: red;
+  background-color: red;
+  content: '';
+  position: inherit;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.auth-modal__page {
+  width: 448px;
+  margin: 0 auto;
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.auth-modal__btn {
+  font-family: "Ronoto", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0D444D;
+  text-transform: uppercase;
+  margin: 0;
+  width: 50%;
+  padding: 0 29px 20px 30px;
+  border: none;
+  border-bottom: 2px solid #C5E1E6;
+  background-color: transparent;
+}
+
+.auth-modal__btn--active {
+  border-bottom: 2px solid #2A8086;
+}
+
+.auth-modal__btn:hover {
+  cursor: pointer;
+}
+
+.auth-modal__btn--login--active {
+  border-bottom: 2px solid #2A8086;
+}
+
+.auth-modal__sign {
+  width: 448px;
+  margin: 0 auto;
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.auth-modal__sign-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 216px;
+  padding: 17px 55px 18px 16.72px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.auth-modal__sign-social img {
+  margin-right: 15px;
+}
+
+.auth-modal__sign-social p {
+  font-family: "Ronoto", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16;
+  line-height: 19px;
+  color: #2d2d2d;
+}
+
+.auth-modal__sign-facebook {
+  padding: 17px 39px 18px 16.72px;
+}
+
+.auth-modal__form {
+  width: 448px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.auth-modal__form-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Ronoto", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0D444D;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.auth-modal__form-label input {
+  margin-top: 8px;
+  border: none;
+  height: 54px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.auth-modal__form-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-bottom: 32px;
+}
+
+.auth-modal__form-checkbox input {
+  width: 22px;
+  height: 22px;
+  margin-right: 22px;
+  cursor: pointer;
+}
+
+.auth-modal__form-submit {
+  font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #C5E1E6;
+  letter-spacing: 0.1em;
+  background: #2A8088;
+  -webkit-box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+          box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+  border-radius: 100px;
+  padding: 15px 200px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.login {
+  display: none;
+}
+
+.login .modal__content {
+  height: 635px;
+}
+
+.login-form {
+  display: none;
+}
+
+.login-form--opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.register--active--closed {
+  display: none;
+}
+
+.register__content--height {
+  -webkit-animation: login-height 0.3s both;
+          animation: login-height 0.3s both;
 }
 /*# sourceMappingURL=main.css.map */
