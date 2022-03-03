@@ -105,8 +105,8 @@
                 <source media="(max-width: 1200px)" type="image/webp"
                   srcset="img/panda-desktop.webp 1x, img/panda-desktop@2x.webp 2x">
 
-                  <source type="image/img" media="(max-width: 1200px)"
-                    srcset="img/panda-desktop2x.png 2x, img/panda-desktop.png 1x">
+                <source type="image/img" media="(max-width: 1200px)"
+                  srcset="img/panda-desktop2x.png 2x, img/panda-desktop.png 1x">
 
                 <source type="image/webp" srcset="img/panda.webp 1x, img/panda@2x.webp 2x">
                 <img src="img/panda.png" alt="Pandas" srcset="img/panda@2x.png 2x, img/panda.png">
@@ -153,8 +153,7 @@
               <picture class="pets__item-img">
 
                 <source type="image/webp" srcset="img/aligator.webp 1x, img/aligator@2x.webp 2x">
-                <img src="img/aligator.png" alt="aligators" srcset="img/aligator@2x.png 2x, img/aligator.png"
-                  >
+                <img src="img/aligator.png" alt="aligators" srcset="img/aligator@2x.png 2x, img/aligator.png">
               </picture>
             </a>
             <div class="pets__item-content">
@@ -168,8 +167,7 @@
               <picture class="pets__item-img">
 
                 <source type="image/webp" srcset="img/elephant.webp 1x, img/elephant@2x.webp 2x">
-                <img src="img/elephant.png" alt="elephants" srcset="img/elephant@2x.png 2x, img/elephant.png"
-                  >
+                <img src="img/elephant.png" alt="elephants" srcset="img/elephant@2x.png 2x, img/elephant.png">
               </picture>
             </a>
             <div class="pets__item-content">
@@ -242,44 +240,46 @@
     </section>
 
     <section class="testimonials">
-      <div class="container testimonials__container">
-        <div class="testimonials__content">
-          <h2 class="testimonials__title">Testimonials</h2>
-          <button class="testimonials__btn">Leave feedback</button>
-        </div>
+      <div class="container-small testimonials__container">
+        <h2 class="testimonials__title">Testimonials</h2>
+        <button class="testimonials__btn">Leave feedback</button>
         <ul class="testimonials__list">
           <li class="testimonials__item">
             <div class="testimonials__item-action">
-              <time datetime="2020-12-20">20 Decepmer 2020</time>
-              <p class="testimonials__descreption">Awesome place to observe my favourite aligators at Florida, the
-                quality of the video is great. </p>
+              <time class="testimonials__time" datetime="2020-12-20">20 Decepmer 2020</time>
+              <blockquote class="testimonials__descreption">Awesome place to observe my favourite aligators at Florida,
+                the
+                quality of the video is great. </blockquote>
             </div>
             <div class="testimonials__item-content">
-              <img src="img/adam.png" srcset="img/adam@2x.png 2x, img/adam.png 1x" alt="adam" width="68" height="68">
+              <img class="testimonials__img" src="img/adam.png" srcset="img/adam@2x.png 2x, img/adam.png 1x" alt="adam"
+                width="68" height="68">
               <p class="testimonials__item-title">Adam, Spain</p>
             </div>
           </li>
           <li class="testimonials__item">
             <div class="testimonials__item-action">
-              <time datetime="2020-12-20">20 Decepmer 2020</time>
-              <p class="testimonials__descreption">Awesome place to observe my favourite aligators at Florida, the
-                quality of the video is great. </p>
+              <time class="testimonials__time" datetime="2020-12-20">20 Decepmer 2020</time>
+              <blockquote class="testimonials__descreption">Awesome place to observe my favourite aligators at Florida,
+                the
+                quality of the video is great. </blockquote>
             </div>
             <div class="testimonials__item-content">
-              <img src="img/chris.png" srcset="img/chris@2x.png 2x, img/chris.png 1x" alt="chris" width="68"
-                height="68">
+              <img class="testimonials__img" src="img/chris.png" srcset="img/chris@2x.png 2x, img/chris.png 1x"
+                alt="chris" width="68" height="68">
               <p class="testimonials__item-title">Chris, Australia</p>
             </div>
           </li>
           <li class="testimonials__item">
             <div class="testimonials__item-action">
-              <time datetime="2020-12-20">20 Decepmer 2020</time>
-              <p class="testimonials__descreption">Awesome place to observe my favourite aligators at Florida, the
-                quality of the video is great. </p>
+              <time class="testimonials__time" datetime="2020-12-20">20 Decepmer 2020</time>
+              <blockquote class="testimonials__descreption">Awesome place to observe my favourite aligators at Florida,
+                the
+                quality of the video is great. </blockquote>
             </div>
             <div class="testimonials__item-content">
-              <img src="img/amely.png" srcset="img/amely@2x.png 2x, img/amely.png 1x" alt="amely" width="68"
-                height="68">
+              <img class="testimonials__img" src="img/amely.png" srcset="img/amely@2x.png 2x, img/amely.png 1x"
+                alt="amely" width="68" height="68">
               <p class="testimonials__item-title">Amely, USA</p>
             </div>
           </li>
@@ -364,40 +364,40 @@
 
   <div class="modal container">
     <div class="sign">
-        <a class="sign__logo" href="/"><img class="sign__logo-img" src="img/Logo.svg" alt="logo"></a>
-        <form class="sign__form" action="" method="post">
-          <div class="sign__titls">
-            <h2 class="sign__title sign__title--account">Create acccount</h2>
-            <h2 class="sign__title">Log in</h2>
-          </div>
-          <div class="sign__links">
-            <a href="" class="sign__link"><img class="sign__img" src="img/google.svg" alt="google"> Google Sign in</a>
-            <a href="" class="sign__link"><img class="sign__img" src="img/face.svg" alt="face"> Facebook Sign in</a>
-          </div>
-          <label class="sign__label" for="">
-            <span class="sign__text">Name</span>
-            <input class="sign__field" type="text">
-          </label>
-          <label class="sign__label" for="">
-            <span class="sign__text">Email</span>
-            <input class="sign__field" type="email">
-          </label>
-          <label class="sign__label" for="">
-            <span class="sign__text">Password</span>
-            <input class="sign__field" type="password">
-          </label>
-          <label class="sign__chekbox" for="">
-            <input class="sign__chek-field" type="checkbox">
-            <span class="sign__text-chek">Agree with the User Agreement and Privacy Policy</span>
-          </label>
-          <button class="sign__btn">send</button>
-        </form>
-      </div>
-      <div class="sign__links">
-        <a href="" class="sign__link"><img src="img/google.svg" alt="google"> Google Sign in</a>
-        <a href="" class="sign__link"><img src="img/face.svg" alt="face"> Facebook Sign in</a>
-      </div>
+      <a class="sign__logo" href="/"><img class="sign__logo-img" src="img/Logo.svg" alt="logo"></a>
+      <form class="sign__form" action="" method="post">
+        <div class="sign__titls">
+          <h2 class="sign__title sign__title--account">Create acccount</h2>
+          <h2 class="sign__title">Log in</h2>
+        </div>
+        <div class="sign__links">
+          <a href="" class="sign__link"><img class="sign__img" src="img/google.svg" alt="google"> Google Sign in</a>
+          <a href="" class="sign__link"><img class="sign__img" src="img/face.svg" alt="face"> Facebook Sign in</a>
+        </div>
+        <label class="sign__label" for="">
+          <span class="sign__text">Name</span>
+          <input class="sign__field" type="text">
+        </label>
+        <label class="sign__label" for="">
+          <span class="sign__text">Email</span>
+          <input class="sign__field" type="email">
+        </label>
+        <label class="sign__label" for="">
+          <span class="sign__text">Password</span>
+          <input class="sign__field" type="password">
+        </label>
+        <label class="sign__chekbox" for="">
+          <input class="sign__chek-field" type="checkbox">
+          <span class="sign__text-chek">Agree with the User Agreement and Privacy Policy</span>
+        </label>
+        <button class="sign__btn">send</button>
+      </form>
     </div>
+    <div class="sign__links">
+      <a href="" class="sign__link"><img src="img/google.svg" alt="google"> Google Sign in</a>
+      <a href="" class="sign__link"><img src="img/face.svg" alt="face"> Facebook Sign in</a>
+    </div>
+  </div>
   </div>
 
   <div class="feedback-modal">
@@ -405,18 +405,18 @@
       <p class="feedback-modal__title">Leave feedback</p>
       <form class="feedback-modal__form" method="get">
         <label>
-          Name
+          <span class="feedback-modal__text">Name</span>
           <input class="feedback-modal__input" name="name" type="text" required>
         </label>
         <label>
-          Email
+          <span class="feedback-modal__text">Email</span>
           <input class="feedback-modal__input" name="email" type="email" required>
         </label>
         <label>
-          Feedback
-          <textarea name="feedback" cols="30" rows="10"></textarea>
+          <span class="feedback-modal__text">Feedback</span>
+          <textarea class="feedback-modal__input" name="feedback" required cols="50" rows="50"></textarea>
         </label>
-        <button type="submit">send</button>
+        <button class="feedback-modal__btn" type="submit">send</button>
       </form>
     </div>
   </div>
@@ -441,39 +441,33 @@
       </form>
     </div>
   </div>
-    <div class="modal__login">
-      <div class="sign">
-        <a class="sign__logo" href="/"><img class="sign__logo-img" src="img/Logo.svg" alt="logo"></a>
-        <form class="sign__form" action="" method="post">
-          <div class="sign__titls">
-            <h2 class="sign__title">Create acccount</h2>
-            <h2 class="sign__title sign__title--login">Log in</h2>
-          </div>
-          <div class="sign__links">
-            <a href="" class="sign__link"><img class="sign__img" src="img/google.svg" alt="google"> Google Sign in</a>
-            <a href="" class="sign__link"><img class="sign__img" src="img/face.svg" alt="face"> Facebook Sign in</a>
-          </div>
-          <label class="sign__label" for="">
-            <span class="sign__text">Email</span>
-            <input class="sign__field" type="email">
-          </label>
-          <label class="sign__label" for="">
-            <span class="sign__text">Password</span>
-            <input class="sign__field" type="password">
-          </label>
-          <button class="sign__btn">send</button>
-        </form>
-      </div>
+  <div class="modal__login">
+    <div class="sign">
+      <a class="sign__logo" href="/"><img class="sign__logo-img" src="img/Logo.svg" alt="logo"></a>
+      <form class="sign__form" action="" method="post">
+        <div class="sign__titls">
+          <h2 class="sign__title">Create acccount</h2>
+          <h2 class="sign__title sign__title--login">Log in</h2>
+        </div>
+        <div class="sign__links">
+          <a href="" class="sign__link"><img class="sign__img" src="img/google.svg" alt="google"> Google Sign in</a>
+          <a href="" class="sign__link"><img class="sign__img" src="img/face.svg" alt="face"> Facebook Sign in</a>
+        </div>
+        <label class="sign__label" for="">
+          <span class="sign__text">Email</span>
+          <input class="sign__field" type="email">
+        </label>
+        <label class="sign__label" for="">
+          <span class="sign__text">Password</span>
+          <input class="sign__field" type="password">
+        </label>
+        <button class="sign__btn">send</button>
+      </form>
     </div>
   </div>
 
-
-
-
-
-
-
   <script src="js/modal.js"></script>
+  <script src="js/feedback.js"></script>
 </body>
 
 </html>

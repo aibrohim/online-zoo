@@ -3,6 +3,16 @@
     padding: 0;
     list-style: none;
 }
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin btn {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+}
 @mixin rubik {
     font-family: "Rubik", Arial, Helvetica, sans-serif;  
 } 
