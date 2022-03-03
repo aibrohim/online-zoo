@@ -43,7 +43,7 @@
           <a class="header__list-link" href="#"><img src="img/lupa.svg" alt="lupa" width="32" height="32"></a>
         </li>
         <li class="header__item">
-          <a class="header__list-link" href="#">Log in</a>
+          <a class="header__list-link login__button" href="#">Log in</a>
         </li>
         <li class="header__item">
           <a class="header__list-link header__list-link--sign register-button" href="#">Sign up</a>
@@ -564,12 +564,13 @@
     </div>
   </div>
 
-  <div class="modal login auth-modal">
-    <div class="modal__content">
+  <div class="modal login-modal auth-modal">
+    <div class="modal__content login__content">
       <img class="auth-modal__img" src="img/Logo.svg" alt="logo">
+      <button class="modal__closer login-modal__closer"></button>
       <div class="auth-modal__page">
         <button class="auth-modal__btn auth-modal__btn--register">Create account</button>
-        <button class="auth-modal__btn auth-modal__btn--active">Log in</button>
+        <button class="auth-modal__btn auth-modal__btn-login--active">Log in</button>
       </div>
   
       <div class="auth-modal__sign">
@@ -597,6 +598,26 @@
         </label>
         <input class="auth-modal__form-submit" type="submit" value="send">
       </form>
+
+      <form class="auth-modal__form register-form " action="#">
+        <label class="auth-modal__form-label">Name
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label class="auth-modal__form-label">
+          Email
+          <input type="email" name="email" id="email" required>
+        </label>
+        <label class="auth-modal__form-label">
+          Password
+          <input class="" type="password" name="pass" id="pass" required>
+        </label>
+        <label class="auth-modal__form-checkbox">
+          <input type="checkbox" name="check" id="check" required>
+          Agree with the User Agreement and Privacy Policy
+        </label>
+        <input class="auth-modal__form-submit" type="submit" value="send">
+      </form>
+
     </div>
   </div>
 
