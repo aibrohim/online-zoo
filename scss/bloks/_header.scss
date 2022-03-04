@@ -17,11 +17,11 @@
     display: flex;
     align-items: center;
 }
+.header__lupa {
+    margin-left: auto;
+}
 .header__item {
-    margin-right: 40px;
-    &:last-child {
-        margin-right: 0;
-    }
+    margin-left: 40px;
 }
 .header__list-link {
     @include roboto;
@@ -60,14 +60,28 @@
     margin: 9px 0;
 
 }
-
+.header__acount {
+    display: none;
+}
 @media only screen and (max-width: $destop) {
     .header {
         padding: 20px 0;
     }  
-    
+    .header__acount {
+        display: block;
+        margin-left: 31px;
+    }
+    .header__list {
+        display: none;
+    }
 }
 @media only screen and (max-width: $tablet) {
+    .header__acount {
+        display: none;
+    }
+    .header__lupa {
+        display: none;
+    }
     .header__nav {
         display: none;
     }
